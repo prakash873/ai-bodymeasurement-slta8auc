@@ -1,0 +1,46 @@
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.upload-area {
+  transition: all 0.3s ease;
+  border: 2px dashed #d1d5db;
+}
+
+.upload-area:hover {
+  border-color: #8b5cf6;
+  background-color: #f8fafc;
+}
+
+.upload-area.dragover {
+  border-color: #8b5cf6;
+  background-color: #f3f4f6;
+  transform: scale(1.02);
+}
+
+.measurement-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.measurement-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
